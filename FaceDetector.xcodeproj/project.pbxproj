@@ -16,6 +16,10 @@
 		E715071424F3CD7100BF3D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E715071224F3CD7100BF3D45 /* Main.storyboard */; };
 		E715071624F3CD7200BF3D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E715071524F3CD7200BF3D45 /* Assets.xcassets */; };
 		E715071924F3CD7200BF3D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E715071724F3CD7200BF3D45 /* LaunchScreen.storyboard */; };
+		E72B1FFE24F3D3D300EB8EE2 /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72B1FFD24F3D3D300EB8EE2 /* FaceDetector.swift */; };
+		E72B200024F3E77100EB8EE2 /* face1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E72B1FFF24F3E77100EB8EE2 /* face1.jpg */; };
+		E72B200124F3E9A300EB8EE2 /* face1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E72B1FFF24F3E77100EB8EE2 /* face1.jpg */; };
+		E72B200224F3E9A400EB8EE2 /* face1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E72B1FFF24F3E77100EB8EE2 /* face1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,8 @@
 		E715071524F3CD7200BF3D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E715071824F3CD7200BF3D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E715071A24F3CD7200BF3D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E72B1FFD24F3D3D300EB8EE2 /* FaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetector.swift; sourceTree = "<group>"; };
+		E72B1FFF24F3E77100EB8EE2 /* face1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		E71506E224F3CCCA00BF3D45 = {
 			isa = PBXGroup;
 			children = (
+				E72B1FFD24F3D3D300EB8EE2 /* FaceDetector.swift */,
 				E71506EE24F3CCCA00BF3D45 /* FaceDetector */,
 				E71506F924F3CCCA00BF3D45 /* FaceDetectorTests */,
 				E715070B24F3CD7100BF3D45 /* FaceDetectorExample */,
@@ -103,6 +110,7 @@
 		E71506F924F3CCCA00BF3D45 /* FaceDetectorTests */ = {
 			isa = PBXGroup;
 			children = (
+				E72B1FFF24F3E77100EB8EE2 /* face1.jpg */,
 				E71506FA24F3CCCA00BF3D45 /* FaceDetectorTests.swift */,
 				E71506FC24F3CCCA00BF3D45 /* Info.plist */,
 			);
@@ -202,6 +210,7 @@
 				TargetAttributes = {
 					E71506EB24F3CCCA00BF3D45 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					E71506F424F3CCCA00BF3D45 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -236,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72B200124F3E9A300EB8EE2 /* face1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72B200024F3E77100EB8EE2 /* face1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72B200224F3E9A400EB8EE2 /* face1.jpg in Resources */,
 				E715071924F3CD7200BF3D45 /* LaunchScreen.storyboard in Resources */,
 				E715071624F3CD7200BF3D45 /* Assets.xcassets in Resources */,
 				E715071424F3CD7100BF3D45 /* Main.storyboard in Resources */,
@@ -263,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72B1FFE24F3D3D300EB8EE2 /* FaceDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +450,7 @@
 		E715070124F3CCCA00BF3D45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -453,6 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sp.FaceDetector;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +476,7 @@
 		E715070224F3CCCA00BF3D45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -485,6 +501,7 @@
 		E715070424F3CCCA00BF3D45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FaceDetectorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -502,6 +519,7 @@
 		E715070524F3CCCA00BF3D45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FaceDetectorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
