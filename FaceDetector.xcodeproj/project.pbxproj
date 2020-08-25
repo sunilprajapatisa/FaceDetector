@@ -30,6 +30,13 @@
 			remoteGlobalIDString = E71506EB24F3CCCA00BF3D45;
 			remoteInfo = FaceDetector;
 		};
+		E7E3862824F4D6B6009DD03C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E71506E324F3CCCA00BF3D45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E715070924F3CD7100BF3D45;
+			remoteInfo = FaceDetectorExample;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -175,6 +182,7 @@
 			);
 			dependencies = (
 				E71506F824F3CCCA00BF3D45 /* PBXTargetDependency */,
+				E7E3862924F4D6B6009DD03C /* PBXTargetDependency */,
 			);
 			name = FaceDetectorTests;
 			productName = FaceDetectorTests;
@@ -214,6 +222,7 @@
 					};
 					E71506F424F3CCCA00BF3D45 = {
 						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E715070924F3CD7100BF3D45;
 					};
 					E715070924F3CD7100BF3D45 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -304,6 +313,11 @@
 			isa = PBXTargetDependency;
 			target = E71506EB24F3CCCA00BF3D45 /* FaceDetector */;
 			targetProxy = E71506F724F3CCCA00BF3D45 /* PBXContainerItemProxy */;
+		};
+		E7E3862924F4D6B6009DD03C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E715070924F3CD7100BF3D45 /* FaceDetectorExample */;
+			targetProxy = E7E3862824F4D6B6009DD03C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -513,6 +527,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceDetectorExample.app/FaceDetectorExample";
 			};
 			name = Debug;
 		};
@@ -531,6 +546,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceDetectorExample.app/FaceDetectorExample";
 			};
 			name = Release;
 		};
