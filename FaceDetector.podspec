@@ -9,7 +9,7 @@ This CocoaPods library helps you perform calculation.
                    DESC
 
   spec.homepage     = "https://github.com/sunilprajapatisa/FaceDetector"
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   spec.author             = { "Sunil Prajapati" => "sunil.prajapati@solutionanalysts.com" }
 
